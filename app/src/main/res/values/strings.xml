@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NoteManager</string>
+    <string name="action_settings">Settings</string>
+    <string name="toolbar_title">GeekBrains Notes</string>
+    <string name="item_title">Geekbrains + Kotlin forever</string>
+    <string name="item_body">I have learned Kotlin!</string>
+    <string name="add_note_title">Title</string>
+    <string name="add_note_body_hint">note\'s body</string>
+    <string name="new_note_title">New Note</string>
+    <string name="ok_bth_title">Ok</string>
+</resources>

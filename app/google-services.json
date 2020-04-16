@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "152330702863",
+    "firebase_url": "https://notemanager-e552e.firebaseio.com",
+    "project_id": "notemanager-e552e",
+    "storage_bucket": "notemanager-e552e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152330702863:android:0e23718573a84837acd37a",
+        "android_client_info": {
+          "package_name": "geekbrains.ru.notemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152330702863-44pr90sn7ve20flr7l6tqqlet8spdncq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg9KTWtPOiVPLxIZD1B87w_mknXsxixd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152330702863-44pr90sn7ve20flr7l6tqqlet8spdncq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
