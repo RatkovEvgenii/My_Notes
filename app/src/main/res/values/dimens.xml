@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="common_margin">8dp</dimen>
+    <dimen name="frame_margin">4dp</dimen>
+    <dimen name="edit_matgin">16dp</dimen>
+    <dimen name="liner_layout_padding">16dp</dimen>
+</resources>
