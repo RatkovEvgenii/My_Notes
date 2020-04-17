@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мои Заметки</string>
+    <string name="action_settings">Настройки</string>
+    <string name="toolbar_title">Мои Заметки</string>
+    <string name="item_title">MyNotes</string>
+    <string name="item_body">I have learned Kotlin!</string>
+    <string name="add_note_title">Название заметки</string>
+    <string name="add_note_body_hint">Описание</string>
+    <string name="new_note_title">Новая заметка</string>
+    <string name="ok_bth_title">Ok</string>
+</resources>
