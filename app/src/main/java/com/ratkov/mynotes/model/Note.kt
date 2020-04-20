@@ -9,8 +9,8 @@ data class Note(val id: String = "",
                 val title: String = "",
                 val note: String = "",
                 val rnds: Int = (1..7).random(),
-                val color: Color = Color.BLUE,
-            /*val color: Color = when(rnds) {
+                //val color: Color = Color.BLUE,
+            val color: Color = when(rnds) {
                 1 ->   Color.WHITE
                 2 -> Color.VIOLET
                 3->  Color.YELLOW
@@ -19,7 +19,7 @@ data class Note(val id: String = "",
                 6->  Color.GREEN
                 7->  Color.BLUE
                 else -> Color.WHITE
-            },*/
+            },
                 val lastChanged: Date = Date()): Parcelable {
 
     override fun equals(other: Any?): Boolean {
