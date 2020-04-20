@@ -8,12 +8,15 @@ import android.view.MenuItem
 import androidx.core.widget.doAfterTextChanged
 import androidx.lifecycle.ViewModelProviders
 import com.ratkov.mynotes.R
+import com.ratkov.mynotes.format
+import com.ratkov.mynotes.getColorInt
 import com.ratkov.mynotes.model.Color
 import com.ratkov.mynotes.model.Note
 import com.ratkov.mynotes.ui.base.BaseActivity
 import com.ratkov.mynotes.viewmodel.note.NoteViewModel
 import com.ratkov.mynotes.viewmodel.note.NoteViewState
 import kotlinx.android.synthetic.main.activity_note.*
+import kotlinx.android.synthetic.main.item_note.*
 import java.util.*
 
 private const val SAVE_DELAY = 2000L
@@ -55,23 +58,18 @@ class NoteActivity : BaseActivity<Note?, NoteViewState>() {
         this.note = data
         initView()
     }
-    private fun initView() {
-        if (note != null) {
-            titleEt.setText(note?.title ?: "")
-            bodyEt.setText(note?.note ?: "")
-            val color = when(note!!.color) {
-                Color.WHITE -> R.color.color_white
-                Color.VIOLET -> R.color.color_violet
-                Color.YELLOW -> R.color.color_yello
-                Color.RED -> R.color.color_red
-                Color.PINK -> R.color.color_pink
-                Color.GREEN -> R.color.color_green
-                Color.BLUE -> R.color.color_blue
-            }
 
-            toolbar.setBackgroundColor(resources.getColor(color))
+    private fun initView() {
+        note?.run {
+            supportActionBar?.title = lastChanged.format()
+
+            titleEt.setText(title)
+            bodyEt.setText(note)
+
+            toolbar.setBackgroundColor(color.getColorInt(this@NoteActivity))
         }
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when(item.itemId) {
         android.R.id.home -> {

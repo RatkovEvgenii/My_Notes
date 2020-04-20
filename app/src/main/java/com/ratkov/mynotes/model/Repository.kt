@@ -13,7 +13,7 @@ object Repository {
     fun getNotes() = remoteProvider.subscribeToAllNotes()
     fun saveNote(note: Note) = remoteProvider.saveNote(note)
     fun getNoteById(id: String) = remoteProvider.getNoteById(id)
-
+    fun getCurrentUser() = remoteProvider.getCurrentUser()
     private val notesLiveData = MutableLiveData<List<Note>>()
     private val notes = mutableListOf(
         Note(id = UUID.randomUUID().toString(),
