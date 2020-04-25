@@ -8,7 +8,7 @@ import com.ratkov.mynotes.viewmodel.base.BaseViewModel
 import com.ratkov.mynotes.model.NoteResult.Success
 import com.ratkov.mynotes.model.NoteResult.Error
 
-class MainViewModel(val repository: Repository = Repository) : BaseViewModel<List<Note>?, MainViewState>() {
+class MainViewModel(val repository: Repository) : BaseViewModel<List<Note>?, MainViewState>() {
 
     private val notesObserver = object : Observer<NoteResult> {//Стандартный обсервер LiveData
     override fun onChanged(t: NoteResult?) {

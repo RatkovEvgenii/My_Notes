@@ -1,11 +1,11 @@
-package com.ratkov.mynotes.ui.splash
+package com.ratkov.mynotes.viewmodel.spalsh
 
 import com.ratkov.mynotes.data.errors.NoAuthException
 import com.ratkov.mynotes.model.Repository
 import com.ratkov.mynotes.viewmodel.base.BaseViewModel
 
 
-class SplashViewModel(private val repository: Repository = Repository) : BaseViewModel<Boolean?, SplashViewState>() {
+class SplashViewModel(private val repository: Repository) : BaseViewModel<Boolean?, SplashViewState>() {
 
     fun requestUser() {
         repository.getCurrentUser().observeForever {

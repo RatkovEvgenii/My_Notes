@@ -1,4 +1,4 @@
-package com.ratkov.mynotes.ui.splash
+package com.ratkov.mynotes.viewmodel.spalsh
 
 import com.ratkov.mynotes.viewmodel.base.BaseViewState
 

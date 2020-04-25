@@ -3,4 +3,7 @@
     <dimen name="frame_margin">4dp</dimen>
     <dimen name="edit_matgin">16dp</dimen>
     <dimen name="liner_layout_padding">16dp</dimen>
+    <dimen name="color_view_padding">8dp</dimen>
+    <dimen name="def_radius_dp">16dp</dimen>
+    <dimen name="def_stroke_width_dp">1dp</dimen>
 </resources>
